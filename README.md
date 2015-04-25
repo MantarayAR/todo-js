@@ -1,6 +1,11 @@
 # TODO JS
 Make sure your todos get completed by making them throw exceptions if they are past due! For Meteor and NPM.
 
+# Installation
+
+* Meteor `meteor add mantarayar:todo`
+* NPM `npm install https://github.com/mantarayar/todo-js/tarball/0.0.2`
+
 # Syntax
 
 You can use `TODO`, `FIXME`, and `XXX` as indicators that a feature needs to be completed.  You can then provide a date, datetime, or a version when it should be completed.
