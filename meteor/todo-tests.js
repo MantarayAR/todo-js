@@ -193,7 +193,6 @@ Tinytest.add( 'TODO checkes for invalid date', function ( test ) {
   TODO.options.reset();
 } );
 
-// Test error message is correct
 Tinytest.add( 'TODO throws correct message using date', function ( test ) { 
   TODO.options.reset();
   var exceptionThrown = false;
