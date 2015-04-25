@@ -30,8 +30,8 @@ Tinytest.add( 'FIXME exists and is callable', function ( test ) {
 } );
 
 Tinytest.add( 'XXX exists and is callable', function ( test ) {
-  test.isNotNull( TODO );
-  test.isTrue( typeof TODO === 'function' );
+  test.isNotNull( XXX );
+  test.isTrue( typeof XXX === 'function' );
 } );
 
 Tinytest.add( 'TODO options has defaults', function ( test ) {

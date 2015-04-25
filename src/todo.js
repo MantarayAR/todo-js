@@ -191,12 +191,18 @@ var that = this;
   }
 
   // Metoer support
-  if ( Meteor ) {
+  if ( typeof Meteor !== 'undefined' ) {
     that.TODO  = TODO;
     that.FIXME = FIXME;
     that.XXX   = XXX;
   }
 
-  // TODO support require modules
-  
+  // support require modules
+  if ( typeof module !== 'undefined' ) {
+    module.exports = {
+      TODO : TODO,
+      FIXME : FIXME,
+      XXX : XXX
+    }
+  }
 }();
