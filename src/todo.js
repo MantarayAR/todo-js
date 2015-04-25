@@ -100,7 +100,7 @@ var that = this;
     // Determine what type of "by" we are checking: date or version
     if ( by.indexOf( 'v' ) === 0 ) {
       // Checking version
-      if ( versionCheck( by, TODO.options().currentVersion ) === 1 ) {
+      if ( versionCheck( by, TODO.options().currentVersion ) === -1 ) {
         itFailed.call( this, message, by );
       }
     } else {
@@ -186,8 +186,17 @@ var that = this;
     this._options = options;
   };
 
-  // TODO this won't work in NPM
-  that.TODO  = TODO;
-  that.FIXME = FIXME;
-  that.XXX   = XXX;
+  TODO.options.reset = function () {
+    TODO._options = TODO._defaults;
+  }
+
+  // Metoer support
+  if ( Meteor ) {
+    that.TODO  = TODO;
+    that.FIXME = FIXME;
+    that.XXX   = XXX;
+  }
+
+  // TODO support require modules
+  
 }();
