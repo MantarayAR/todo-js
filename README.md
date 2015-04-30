@@ -34,7 +34,7 @@ XXX( 'Dates should have a time', 'v2.12.0' );
 
 There are some options you can set:
 
-```
+```js
 TODO.options( {
     ignore : [], // Example: ['TODO', 'FIXME', 'XXX']
     log : false, // set `true` to use console.log instead of throwing an exception
